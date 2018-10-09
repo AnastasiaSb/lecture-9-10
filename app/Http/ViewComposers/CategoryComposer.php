@@ -9,7 +9,7 @@ class CategoryComposer
 
     public function __construct(CategoryRepositoryInterface $categories)
     {
-        $this->categories = $categories
+        $this->categories = $categories;
     }
 
     public function compose(View $view)

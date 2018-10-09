@@ -36,4 +36,20 @@ class ProductController extends Controller
         $images = $this->productImageRepository->findProductImageByProductId($product->getId());
         return view('front.products.product', compact('product', 'images'));
     }
+    /**
+     * @return
+     */
+    public function create()
+    {
+        //
+    }
+    /**
+     * Addd product to database
+     *
+     * @param
+     */
+    public function store(ProductRequest $request)
+    {
+        //
+    }
 }

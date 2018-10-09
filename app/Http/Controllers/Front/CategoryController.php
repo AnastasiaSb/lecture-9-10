@@ -32,4 +32,18 @@ class CategoryController extends Controller
         $category = $this->categoryRepository->findBy('slug', '=', $slug)->first();
         return view('front.categories.category', compact('category'));
     }
+    /**
+     * @return
+     */
+    public function create()
+    {
+        //
+    }
+    /**
+     * @param
+     */
+    public function store(CategoryRequest $request)
+    {
+       //
+    }
 }
